@@ -1,0 +1,9 @@
+[submodule "rebornos-calamares-core"]
+	path = rebornos-calamares-core
+	url = git@gitlab.com:rebornos-team/installers/calamares-installer/rebornos-calamares/rebornos-calamares-core.git
+[submodule "rebornos-calamares-configuration"]
+	path = rebornos-calamares-configuration
+	url = git@gitlab.com:rebornos-team/installers/calamares-installer/rebornos-calamares/rebornos-calamares-configuration.git
+[submodule "rebornos-calamares-branding"]
+	path = rebornos-calamares-branding
+	url = git@gitlab.com:rebornos-team/installers/calamares-installer/rebornos-calamares/rebornos-calamares-branding.git
