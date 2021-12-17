@@ -1,9 +1,9 @@
 [submodule "calamares-core"]
 	path = calamares-core
-	url = git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-core.git
+	url = https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-core.git
 [submodule "calamares-configuration"]
 	path = calamares-configuration
-	url = git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-configuration.git
+	url = https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-core.git
 [submodule "calamares-branding"]
 	path = calamares-branding
-	url = git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-branding.git
+	url = https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-core.git
