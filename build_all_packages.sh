@@ -12,7 +12,7 @@ run_build_script() {
     shift 2
 
     echo ""
-    echo "Building the $1 package..."
+    echo "Building the $PACKAGE_NAME package..."
     echo ""
     if [ ! -f "$SCRIPT_PATH" ];then
         >&2 echo "Please re-trace the cloning instructions in the README. The submodules have not been initialized and/or updated correctly."
