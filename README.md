@@ -1,4 +1,4 @@
-# rebornos-calamares
+# Calamares
 
 EXPERIMENTAL: Please contact shivanandvp@rebornos.org
 
