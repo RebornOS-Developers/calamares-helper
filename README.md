@@ -21,13 +21,13 @@ In order to download the source code to your local computer for testing, or for 
 ### HTTPS
 
 ```bash
-git clone --recurse-submodules https://gitlab.com/rebornos-team/installers/calamares-installer/rebornos-calamares/rebornos-calamares.git
+git clone --recurse-submodules https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-installer.git
 ```
 
 ### SSH
 
 ```bash
-git clone --recurse-submodules git@gitlab.com:rebornos-team/installers/calamares-installer/rebornos-calamares/rebornos-calamares.git
+git clone --recurse-submodules git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-installer.git
 ```
 
 ## 2. Testing
