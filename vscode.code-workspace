@@ -5,9 +5,6 @@
 		}
 	],
 	"settings": {
-		"git.postCommitCommand": "sync",
-		"files.watcherInclude": [
-			"session.log"
-		]
+		"git.postCommitCommand": "sync"
 	}
 }
