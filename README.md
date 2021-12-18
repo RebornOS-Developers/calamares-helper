@@ -30,42 +30,20 @@ git clone --recurse-submodules https://gitlab.com/rebornos-labs/installer-and-is
 git clone --recurse-submodules git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-installer.git
 ```
 
-## 2. Testing
+## 2. Setup
 
-### 2.1 Building packages for Arch Linux
-
-The below script will internally call the convenience build scripts of each constituent repository. Make sure that you are in the project base directory (you would run something like `cd rebornos-calamares` after cloning).
+The below script will internally call the convenience build and install scripts of each constituent repository. Make sure that you are in the project base directory (you would run something like `cd rebornos-calamares` after cloning).
 
 ```bash
-sh build_all_packages.sh
+sh setup_all_packages.sh
 ```
 
-### 2.2 Installing packages on Arch Linux
+## 3. Testing
 
-The below script will internally call the convenience install scripts of each constituent repository. Make sure that you are in the project base directory (you would have had to run something like `cd rebornos-calamares` after cloning).
+The below script will run the installer and will automatically copy the log file (`session.log`) to the current directory.
 
 ```bash
-sh install_all_packages.sh
+sh test_installer.sh
 ```
 
-## 3. Running
-
-You can run the Calamares installer either from the desktop icon, or from the commandline.
-
-### From the desktop
-
-Search your launcher, start-menu or app-grid for `RebornOS Installer (Calamares)` and launch it by clicking.
-
-### From the commandline
-
-Run the below command on a terminal:
-```bash
-pkexec calamares -style kvantum -X -D6
-```
-
-## 4. Logs
-
-The log files can be found at
-```bash
-/root/.cache/calamares/session.log
-```
+> Note: You can also run the Calamares installer from the desktop icon. Search your launcher, start-menu or app-grid for `RebornOS Installer (Calamares)` and launch it by clicking.
