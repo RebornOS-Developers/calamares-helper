@@ -35,7 +35,7 @@ git clone --recurse-submodules git@gitlab.com:rebornos-labs/installer-and-iso/ca
 The below script will internally call the convenience build and install scripts of each constituent repository. Make sure that you are in the project base directory (you would run something like `cd rebornos-calamares` after cloning).
 
 ```bash
-sh setup_all_packages.sh
+sh setup_all.sh
 ```
 
 ## 3. Testing
@@ -44,6 +44,14 @@ The below script will run the installer and will automatically copy the log file
 
 ```bash
 sh test_installer.sh
+```
+
+## 4. Updating
+
+The below script will update the local git repository by pulling the superproject and all submodules from the remote git repository. You would run this to retrieve all the changes made to the project by the developer(s)
+
+```bash
+sh pull_all.sh
 ```
 
 > Note: You can also run the Calamares installer from the desktop icon. Search your launcher, start-menu or app-grid for `RebornOS Installer (Calamares)` and launch it by clicking.
