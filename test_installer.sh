@@ -10,7 +10,7 @@ if pacman -Qq "$INSTALLER_PACKAGE" > /dev/null 2>&1;then
     echo "Launching the Calamares installer..."
     echo ""
     set -o xtrace
-    sudo calamares -style kvantum -X -D6 "$@"
+    sudo calamares -style kvantum -X -D8 "$@"
     set +o xtrace
 else
     echo ""
@@ -18,7 +18,7 @@ else
     echo ""
     set -o xtrace
     sh "$SCRIPT_DIRECTORY"/install_all.sh && \
-    sudo calamares -style kvantum -X -D6 "$@"
+    sudo calamares -style kvantum -X -D8 "$@"
     set +o xtrace
 fi
 
