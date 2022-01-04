@@ -46,7 +46,9 @@ The below script will run the installer and will automatically copy the log file
 sh test_installer.sh
 ```
 
-Optionally, you can specify whether you would like to 
+Optionally, you can specify whether you would like to run in `offline` or `online` mode by specifying it as the first commandline argument to the above script. For example: `sh test_installer.sh offline` or `sh test_installer.sh online`.
+
+> Note: You can also run the Calamares installer from the desktop icon. Search your launcher, start-menu or app-grid for `RebornOS Installer (Calamares)` and launch it by clicking.
 
 ## 4. Updating
 
@@ -57,5 +59,3 @@ sh pull_all.sh
 ```
 
 Once done, you can proceed to [2. Setup](2-setup)
-
-> Note: You can also run the Calamares installer from the desktop icon. Search your launcher, start-menu or app-grid for `RebornOS Installer (Calamares)` and launch it by clicking.
