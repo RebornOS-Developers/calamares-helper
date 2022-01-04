@@ -55,7 +55,7 @@ sh test_installer.sh offline
 or
 
 ```bash
-sh test_installer.sh online`
+sh test_installer.sh online
 ```
 
 > Note: You can also run the Calamares installer from the desktop icon. Search your launcher, start-menu or app-grid for `RebornOS Installer (Calamares)` and launch it by clicking.
