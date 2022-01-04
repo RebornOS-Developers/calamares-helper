@@ -37,6 +37,7 @@ echo ""
 if sudo ls "$LOG_PATH" > /dev/null 2>&1;then
     set -o xtrace
     sudo cp "$LOG_PATH" ./session.log
+    sudo chmod 755 ./session.log
     set +o xtrace
     echo ""
     echo "Log file copied to ./session.log"
