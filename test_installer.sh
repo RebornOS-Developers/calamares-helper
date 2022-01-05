@@ -14,6 +14,7 @@ if [ "$MODE" = "offline" ] || [ "$MODE" = "online" ]; then
     shift 1
 fi
 
+sudo rm -f "$LOG_PATH"
 if pacman -Qq "$INSTALLER_PACKAGE" > /dev/null 2>&1;then
     echo ""
     echo "Launching the Calamares installer..."
