@@ -32,7 +32,7 @@ git clone --recurse-submodules git@gitlab.com:rebornos-labs/installer-and-iso/ca
 
 ## 2. Setup
 
-The below script will internally call the convenience build and install scripts of each constituent repository. Make sure that you are in the project base directory (you would run something like `cd rebornos-calamares` after cloning).
+The below script will internally call the convenience build and install scripts of each constituent repository. Make sure that you are in the project base directory (you would run something like `cd calamares-installer` after cloning).
 
 ```bash
 sh setup.sh
