@@ -2,4 +2,6 @@
 
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
 
-(cd "$SCRIPT_DIRECTORY" && git pull --recurse-submodules)
+set -o xtrace
+sh "$SCRIPT_DIRECTORY"/build.sh --install "$@"
+set +o xtrace

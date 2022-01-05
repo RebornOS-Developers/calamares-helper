@@ -12,6 +12,10 @@ if [ "$MODE" = "offline" ] || [ "$MODE" = "online" ]; then
     CALAMARES_EXECUTABLE="run_calamares.sh"
     OPTIONAL_MODE="$MODE"
     shift 1
+else
+    CALAMARES_EXECUTABLE="run_calamares.sh"
+    OPTIONAL_MODE="online"
+    shift 1
 fi
 
 sudo rm -f "$LOG_PATH"
@@ -27,7 +31,7 @@ else
     echo "Installer packages not found. Installing and then launching the Calamares installer..."
     echo ""
     set -o xtrace
-    sh "$SCRIPT_DIRECTORY"/install_all.sh && \
+    sh "$SCRIPT_DIRECTORY"/install.sh && \
     sudo "$CALAMARES_EXECUTABLE" "$OPTIONAL_MODE" -style kvantum -X -D8 "$@"
     set +o xtrace
 fi
