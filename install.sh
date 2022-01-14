@@ -1,5 +1,7 @@
 #! /usr/bin/env sh
 
+# Install the created calamares packages (currently for Arch Linux)
+
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
 
 CONFIGURATION_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-configuration/scripts/install_archlinux_package.sh"
