@@ -25,6 +25,7 @@ run_build_script() {
     set +o xtrace
 }
 
+sudo pacman -Sy
 run_build_script "Calamares configuration" "$CONFIGURATION_SCRIPT_PATH" "$@"
 run_build_script "Calamares branding" "$BRANDING_SCRIPT_PATH" "$@"
 run_build_script "Calamares core" "$CORE_SCRIPT_PATH" "$@"
