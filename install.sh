@@ -4,9 +4,9 @@
 
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
 
-CONFIGURATION_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-configuration/scripts/install_archlinux_package.sh"
-BRANDING_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-branding/scripts/install_archlinux_package.sh"
-CORE_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-core/scripts/install_archlinux_package.sh"
+CONFIGURATION_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-configuration/scripts/install_package.sh"
+BRANDING_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-branding/scripts/install_package.sh"
+CORE_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-core/scripts/install_package.sh"
 
 run_install_script() {
     PACKAGE_NAME="$1"
