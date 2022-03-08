@@ -12,7 +12,7 @@ This is a central git repository that holds the above three constituent reposito
 
 For ease in identification, in each consituent repository, all packaging related code is placed under a directory called `scripts`. This is where you will find scripts for conveniently building and installing packages. Most of these will have argument pass-through so that any additional arguments can be supplied to the inner command that is called. For additional information, view the script in question for inline documentation. Additionally, the core package contains convenience scripts for configuring, building, and running the local source without packaging it. This is mainly intended for quicker testing during development. The scripts take special care to identify their actual path, even resolving any symlinks, so that you don't have to change directories with `cd` in order to execute them. A relative path is sufficient, like `rebornos-calamares-core/rebornos/build_archlinux_package.sh`.
 
-Athough the convenience scripts can practically do everything that `makepkg` can do, advanced users can access the `PKGBUILD`under each repository by navigating to`rebornos/archlinux_packaging`. By changing to this directory, you can run `makepkg`on your own for building packages for Arch Linux. The naming of`archlinux_packaging` implies there is space for expansion into non-Arch bases.
+Athough the convenience scripts can practically do everything that `makepkg` can do, advanced users can access the `PKGBUILD`under each repository by navigating to`rebornos/packaging`. By changing to this directory, you can run `makepkg`on your own for building packages for Arch Linux. The naming of`packaging` implies there is space for expansion into non-Arch bases.
 
 ## 1. Cloning
 
