@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-# Build the constituent submodules and create calamares packages (currently for Arch Linux)
+# Build the constituent subprojects and create calamares packages (currently for Arch Linux)
 
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
 
@@ -17,7 +17,7 @@ run_build_script() {
     echo "Building the $PACKAGE_NAME package..."
     echo ""
     if [ ! -f "$SCRIPT_PATH" ];then
-        >&2 echo "Please re-trace the cloning instructions in the README. The submodules have not been initialized and/or updated correctly."
+        >&2 echo "Please re-trace the cloning instructions in the README. The subprojects have not been initialized and/or updated correctly."
         exit 1
     fi
     set -o xtrace

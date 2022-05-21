@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-# Pull changes for the superproject and all the submodules from the remote git host (currently Gitlab)
+# Pull changes for the superproject and all the subprojects from the remote git host (currently Gitlab)
 
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
 

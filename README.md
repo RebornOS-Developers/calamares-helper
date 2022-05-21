@@ -21,13 +21,19 @@ In order to download the source code to your local computer for testing, or for 
 ### HTTPS
 
 ```bash
-git clone --recurse-submodules https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-installer.git
+git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-installer.git
+git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-branding.git calamares-branding
+git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-configuration.git calamares-configuration
+git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-core.git calamares-core
 ```
 
 ### SSH
 
 ```bash
-git clone --recurse-submodules git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-installer.git
+git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-installer.git
+git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-branding.git calamares-branding
+git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-configuration.git calamares-configuration
+git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-core.git calamares-core
 ```
 
 ## 2. Setup
@@ -62,7 +68,7 @@ sh test.sh online
 
 ## 4. Updating
 
-The below script will update the local git repository by pulling the superproject and all submodules from the remote git repository. You would run this to retrieve all the changes made to the project by the developer(s)
+The below script will update the local git repository by pulling the superproject and all subprojects from the remote git repository. You would run this to retrieve all the changes made to the project by the developer(s)
 
 ```bash
 sh pull.sh

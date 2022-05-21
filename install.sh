@@ -17,7 +17,7 @@ run_install_script() {
     echo "Installing the $PACKAGE_NAME package..."
     echo ""
     if [ ! -f "$SCRIPT_PATH" ];then
-        >&2 echo "Please re-trace the cloning instructions in the README. The submodules have not been initialized and/or updated correctly."
+        >&2 echo "Please re-trace the cloning instructions in the README. The subprojects have not been initialized and/or updated correctly."
         exit 1
     fi
     set -o xtrace

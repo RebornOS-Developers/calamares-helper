@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-# Checkout a branch for the superproject and all constituent submodules together so that they do not go out of sync
+# Checkout a branch for the superproject and all constituent subprojects together so that they do not go out of sync
 # The branch name is provided as an argument to this script
 
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
