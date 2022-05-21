@@ -34,6 +34,6 @@
 		"scm.alwaysShowActions": true,
 		"gitlens.advanced.repositorySearchDepth": 3,
 		"git.repositoryScanMaxDepth": 3,
-		// "scm.alwaysShowRepositories": true,
+		"scm.alwaysShowRepositories": true,
 	}
 }
