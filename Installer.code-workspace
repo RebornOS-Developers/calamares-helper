@@ -1,15 +1,19 @@
 {
 	"folders": [
 		{
+			"name": "Branding",
 			"path": "../calamares-branding"
 		},
 		{
+			"name": "Configuration",
 			"path": "../calamares-configuration"
 		},
 		{
+			"name": "Core",
 			"path": "../calamares-core"
 		},
 		{
+			"name": "Superproject",
 			"path": "."
 		}
 	],
