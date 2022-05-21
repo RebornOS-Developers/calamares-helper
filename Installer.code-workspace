@@ -32,6 +32,8 @@
 		"conventionalCommits.promptScopes": false,
 		"conventionalCommits.promptFooter": false,
 		"scm.alwaysShowActions": true,
+		"gitlens.advanced.repositorySearchDepth": 3,
+		"git.repositoryScanMaxDepth": 3,
 		// "scm.alwaysShowRepositories": true,
 	}
 }
