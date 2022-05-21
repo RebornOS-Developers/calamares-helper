@@ -8,7 +8,7 @@ The **Calamares Installer for RebornOS** is shipped as *three separate packages*
 * Configuration
 * Branding
 
-This is a central git repository that holds the above three constituent repositories as *git sub-modules* so that they can be cloned together and worked on together. However, for all practical purposes, each constituent repository is independent and has its own separate remote repository, its own commits and its own git history.
+This is a central git repository that holds the above three constituent repositories as subfolders so that they can be cloned together. However, each constituent repository should be edited independently since each subfolder has its own separate remote repository, its own commits and its own git history.
 
 For ease in identification, in each consituent repository, all packaging related code is placed under a directory called `scripts`. This is where you will find scripts for conveniently building and installing packages. Most of these will have argument pass-through so that any additional arguments can be supplied to the inner command that is called. For additional information, view the script in question for inline documentation. Additionally, the core package contains convenience scripts for configuring, building, and running the local source without packaging it. This is mainly intended for quicker testing during development. The scripts take special care to identify their actual path, even resolving any symlinks, so that you don't have to change directories with `cd` in order to execute them. A relative path is sufficient, like `rebornos-calamares-core/scripts/build_package.sh`.
 
