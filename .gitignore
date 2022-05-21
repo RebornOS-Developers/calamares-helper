@@ -1,2 +1,7 @@
 # Temporary logs
 session.log
+
+# Subfolders
+calamares-branding/
+calamares-configuration/
+calamares-core/
