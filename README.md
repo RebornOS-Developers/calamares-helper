@@ -23,7 +23,7 @@ In order to download the source code to your local computer for testing, or for 
 ```bash
 git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-installer.git
 
-sh clone.sh # For cloning subprojects
+sh calamares-installer/clone.sh # For cloning subprojects
 ```
 
 ### SSH
@@ -31,7 +31,7 @@ sh clone.sh # For cloning subprojects
 ```bash
 git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-installer.git
 
-sh clone.sh ssh # For cloning subprojects
+sh calamares-installer/clone.sh ssh # For cloning subprojects
 ```
 
 ## 2. Setup

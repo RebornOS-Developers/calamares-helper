@@ -4,13 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "./calamares-branding"
+			"path": "../calamares-branding"
 		},
 		{
-			"path": "./calamares-configuration"
+			"path": "../calamares-configuration"
 		},
 		{
-			"path": "./calamares-core"
+			"path": "../calamares-core"
 		}
 	],
 	"settings": {
