@@ -1,1 +1,7 @@
+# Temporary logs
 session.log
+
+# Child repos
+calamares-branding/
+calamares-configuration/
+calamares-core/
