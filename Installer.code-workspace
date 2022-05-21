@@ -31,5 +31,7 @@
 		"conventionalCommits.gitmoji": false,
 		"conventionalCommits.promptScopes": false,
 		"conventionalCommits.promptFooter": false,
+		"scm.alwaysShowActions": true,
+		// "scm.alwaysShowRepositories": true,
 	}
 }
