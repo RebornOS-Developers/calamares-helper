@@ -27,5 +27,9 @@
 		"git.showPushSuccessNotification": true,
 		"git.showUnpublishedCommitsButton": "always",
 		"github.gitProtocol": "ssh",
+		"conventionalCommits.silentAutoCommit": true,
+		"conventionalCommits.gitmoji": false,
+		"conventionalCommits.promptScopes": false,
+		"conventionalCommits.promptFooter": false,
 	}
 }
