@@ -22,18 +22,14 @@ In order to download the source code to your local computer for testing, or for 
 
 ```bash
 git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-installer.git
-git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-branding.git calamares-branding
-git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-configuration.git calamares-configuration
-git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-core.git calamares-core
+sh clone.sh
 ```
 
 ### SSH
 
 ```bash
 git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-installer.git
-git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-branding.git calamares-branding
-git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-configuration.git calamares-configuration
-git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-core.git calamares-core
+sh clone.sh ssh
 ```
 
 ## 2. Setup
