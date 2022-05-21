@@ -19,5 +19,13 @@
 	],
 	"settings": {
 		"git.postCommitCommand": "sync",
+		"git.autofetch": "all",
+		"git.autoStash": true,
+		"git.enableCommitSigning": true,
+		"git.enableSmartCommit": true,
+		"git.fetchOnPull": true,
+		"git.showPushSuccessNotification": true,
+		"git.showUnpublishedCommitsButton": "always",
+		"github.gitProtocol": "ssh",
 	}
 }
