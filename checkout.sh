@@ -4,10 +4,11 @@
 # The branch name is provided as an argument to this script
 
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
+PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
 
-CONFIGURATION_DIRECTORY="$SCRIPT_DIRECTORY/calamares-configuration"
-BRANDING_DIRECTORY="$SCRIPT_DIRECTORY/calamares-branding"
-CORE_DIRECTORY="$SCRIPT_DIRECTORY/calamares-core"
+CONFIGURATION_DIRECTORY="$PROJECT_DIRECTORY/calamares-configuration"
+BRANDING_DIRECTORY="$PROJECT_DIRECTORY/calamares-branding"
+CORE_DIRECTORY="$PROJECT_DIRECTORY/calamares-core"
 
 (cd "$CONFIGURATION_DIRECTORY" && git checkout "$1") && \
 (cd "$BRANDING_DIRECTORY"      && git checkout "$1") && \

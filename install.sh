@@ -3,10 +3,11 @@
 # Install the created calamares packages (currently for Arch Linux)
 
 SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
+PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
 
-CONFIGURATION_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-configuration/scripts/install_package.sh"
-BRANDING_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-branding/scripts/install_package.sh"
-CORE_SCRIPT_PATH="$SCRIPT_DIRECTORY/calamares-core/scripts/install_package.sh"
+CONFIGURATION_SCRIPT_PATH="$PROJECT_DIRECTORY/calamares-configuration/scripts/install_package.sh"
+BRANDING_SCRIPT_PATH="$PROJECT_DIRECTORY/calamares-branding/scripts/install_package.sh"
+CORE_SCRIPT_PATH="$PROJECT_DIRECTORY/calamares-core/scripts/install_package.sh"
 
 run_install_script() {
     PACKAGE_NAME="$1"
