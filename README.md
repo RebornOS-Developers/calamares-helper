@@ -22,6 +22,7 @@ In order to download the source code to your local computer for testing, or for 
 
 ```bash
 git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-installer.git
+
 sh clone.sh
 ```
 
@@ -29,6 +30,7 @@ sh clone.sh
 
 ```bash
 git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-installer.git
+
 sh clone.sh ssh
 ```
 
