@@ -1,9 +1,6 @@
 {
 	"folders": [
 		{
-			"path": "."
-		},
-		{
 			"path": "../calamares-branding"
 		},
 		{
@@ -11,9 +8,12 @@
 		},
 		{
 			"path": "../calamares-core"
+		},
+		{
+			"path": "."
 		}
 	],
 	"settings": {
-		"git.postCommitCommand": "sync"
+		"git.postCommitCommand": "sync",
 	}
 }
