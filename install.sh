@@ -25,5 +25,6 @@ run_install_script() {
     set +o xtrace
 }
 
+sudo pacman -Rdd --noconfirm calamares-branding
 run_install_script "Calamares configuration" "$CONFIGURATION_SCRIPT_PATH" "$@"
 run_install_script "Calamares core" "$CORE_SCRIPT_PATH" "$@"

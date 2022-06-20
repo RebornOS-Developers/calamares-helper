@@ -26,5 +26,6 @@ run_build_script() {
 }
 
 sudo pacman -Sy
+sudo pacman -Rdd --noconfirm calamares-branding
 run_build_script "Calamares configuration" "$CONFIGURATION_SCRIPT_PATH" "$@"
 run_build_script "Calamares core" "$CORE_SCRIPT_PATH" "$@"
