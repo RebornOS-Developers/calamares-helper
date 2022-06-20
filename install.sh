@@ -6,7 +6,6 @@ SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
 PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
 
 CONFIGURATION_SCRIPT_PATH="$PROJECT_DIRECTORY/calamares-configuration/scripts/install_package.sh"
-BRANDING_SCRIPT_PATH="$PROJECT_DIRECTORY/calamares-branding/scripts/install_package.sh"
 CORE_SCRIPT_PATH="$PROJECT_DIRECTORY/calamares-core/scripts/install_package.sh"
 
 run_install_script() {
@@ -27,5 +26,4 @@ run_install_script() {
 }
 
 run_install_script "Calamares configuration" "$CONFIGURATION_SCRIPT_PATH" "$@"
-run_install_script "Calamares branding" "$BRANDING_SCRIPT_PATH" "$@"
 run_install_script "Calamares core" "$CORE_SCRIPT_PATH" "$@"

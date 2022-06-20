@@ -2,13 +2,12 @@
 
 EXPERIMENTAL: Please contact shivanandvp@rebornos.org
 
-The **Calamares Installer for RebornOS** is shipped as *three separate packages* for convenience in maintenance:
+The **Calamares Installer for RebornOS** is shipped as *two separate packages* for convenience in maintenance:
 
 * Core
 * Configuration
-* Branding
 
-This is a central git repository that holds the above three constituent repositories as folders so that they can be cloned together. However, each constituent repository can be edited independently since each folder has its own separate remote repository, its own commits and its own git history.
+This is a central git repository that holds the above two constituent repositories as folders so that they can be cloned together. However, each constituent repository can be edited independently since each folder has its own separate remote repository, its own commits and its own git history.
 
 For ease in identification, in each consituent repository, all packaging related code is placed under a directory called `scripts`. This is where you will find scripts for conveniently building and installing packages. Most of these will have argument pass-through so that any additional arguments can be supplied to the inner command that is called. For additional information, view the script in question for inline documentation. Additionally, the core package contains convenience scripts for configuring, building, and running the local source without packaging it. This is mainly intended for quicker testing during development. The scripts take special care to identify their actual path, even resolving any symlinks, so that you don't have to change directories with `cd` in order to execute them. A relative path is sufficient, like `rebornos-calamares-core/scripts/build_package.sh`.
 
@@ -21,29 +20,29 @@ In order to download the source code to your local computer for testing, or for 
 ### HTTPS
 
 ```bash
-git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-installer.git
+git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-helper.git
 
-sh calamares-installer/clone.sh # For cloning subprojects
+sh calamares-helper/clone.sh # For cloning subprojects
 ```
 
 ### SSH
 
 ```bash
-git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-installer.git
+git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-helper.git
 
-sh calamares-installer/clone.sh ssh # For cloning subprojects
+sh calamares-helper/clone.sh ssh # For cloning subprojects
 ```
 
 ## (Optional) VSCode Workspace
 
 If you followed the above cloning process correctly (*including running the clone script* - **necessary**),
-then open `calamares-installer/Installer.code-workspace` on Visual Studio Code.
+then open `calamares-helper/Installer.code-workspace` on Visual Studio Code.
 
 The above file automatically recognizes all the local installer git repositories and displays them within the VSCode workspace.
 
 ## 2. Setup
 
-The below script will internally call the convenience build and install scripts of each constituent repository. Make sure that you are in the project base directory (you would run something like `cd calamares-installer` after cloning).
+The below script will internally call the convenience build and install scripts of each constituent repository. Make sure that you are in the project base directory (you would run something like `cd calamares-helper` after cloning).
 
 ```bash
 sh setup.sh

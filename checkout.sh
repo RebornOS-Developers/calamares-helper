@@ -7,10 +7,8 @@ SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
 PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
 
 CONFIGURATION_DIRECTORY="$PROJECT_DIRECTORY/calamares-configuration"
-BRANDING_DIRECTORY="$PROJECT_DIRECTORY/calamares-branding"
 CORE_DIRECTORY="$PROJECT_DIRECTORY/calamares-core"
 
 (cd "$CONFIGURATION_DIRECTORY" && git checkout "$1") && \
-(cd "$BRANDING_DIRECTORY"      && git checkout "$1") && \
 (cd "$CORE_DIRECTORY"          && git checkout "$1") && \
 (cd "$SCRIPT_DIRECTORY"        && git checkout "$1")

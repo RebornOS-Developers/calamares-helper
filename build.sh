@@ -6,7 +6,6 @@ SCRIPT_DIRECTORY="$(dirname -- "$(readlink -f -- "$0")")"
 PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
 
 CONFIGURATION_SCRIPT_PATH="$PROJECT_DIRECTORY/calamares-configuration/scripts/build_package.sh"
-BRANDING_SCRIPT_PATH="$PROJECT_DIRECTORY/calamares-branding/scripts/build_package.sh"
 CORE_SCRIPT_PATH="$PROJECT_DIRECTORY/calamares-core/scripts/build_package.sh"
 
 run_build_script() {
@@ -28,5 +27,4 @@ run_build_script() {
 
 sudo pacman -Sy
 run_build_script "Calamares configuration" "$CONFIGURATION_SCRIPT_PATH" "$@"
-run_build_script "Calamares branding" "$BRANDING_SCRIPT_PATH" "$@"
 run_build_script "Calamares core" "$CORE_SCRIPT_PATH" "$@"

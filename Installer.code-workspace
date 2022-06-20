@@ -1,10 +1,6 @@
 {
 	"folders": [
 		{
-			"name": "Branding",
-			"path": "../calamares-branding"
-		},
-		{
 			"name": "Configuration",
 			"path": "../calamares-configuration"
 		},
