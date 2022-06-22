@@ -5,7 +5,7 @@ PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
 
 INSTALLER_PACKAGE="calamares-core"
 LOG_PATH="/root/.cache/calamares/session.log"
-CALAMARES_EXECUTABLE="calamares"
+CALAMARES_EXECUTABLE="run_calamares.sh"
 OPTIONAL_MODE=""
 
 MODE="$(echo "$1" | tr "[:upper:]" "[:lower:]")"
@@ -19,21 +19,22 @@ else
     shift 1
 fi
 
+LAUNCH_COMMAND=""$CALAMARES_EXECUTABLE" "$OPTIONAL_MODE" -D8 "$@""
+
 sudo rm -f "$LOG_PATH"
 if pacman -Qq "$INSTALLER_PACKAGE" > /dev/null 2>&1;then
     echo ""
     echo "Launching the Calamares installer..."
     echo ""
     set -o xtrace
-    sudo "$CALAMARES_EXECUTABLE" "$OPTIONAL_MODE" -style kvantum -X -D8 "$@"
-    set +o xtrace
+    ${LAUNCH_COMMAND}
 else
     echo ""
     echo "Installer packages not found. Installing and then launching the Calamares installer..."
     echo ""
     set -o xtrace
     sh "$SCRIPT_DIRECTORY"/install.sh && \
-    sudo "$CALAMARES_EXECUTABLE" "$OPTIONAL_MODE" -style kvantum -X -D8 "$@"
+    ${LAUNCH_COMMAND}
     set +o xtrace
 fi
 
