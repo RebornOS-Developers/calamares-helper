@@ -9,6 +9,6 @@ PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
 CONFIGURATION_DIRECTORY="$PROJECT_DIRECTORY/calamares-configuration"
 CORE_DIRECTORY="$PROJECT_DIRECTORY/calamares-core"
 
-(cd "$CONFIGURATION_DIRECTORY" && echo "Updating Calamares Configuration from remote..." && git pull "$@") && \
-(cd "$CORE_DIRECTORY"          && echo "Updating Calamares Core from remote..." && git pull "$@") && \
+(cd "$CONFIGURATION_DIRECTORY" && echo "Updating Calamares Configuration from remote..." && git pull "$@")
+(cd "$CORE_DIRECTORY"          && echo "Updating Calamares Core from remote..." && git pull "$@")
 (cd "$SCRIPT_DIRECTORY"        && echo "Updating Calamares Helper from remote..." && git pull "$@")
