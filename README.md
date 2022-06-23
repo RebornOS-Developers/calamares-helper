@@ -20,7 +20,7 @@ In order to download the source code to your local computer for testing, or for 
 ### HTTPS
 
 ```bash
-git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-helper.git
+git clone https://gitlab.com/rebornos-labs/deployment/calamares/calamares-helper.git
 
 sh calamares-helper/clone.sh # For cloning subprojects
 ```
@@ -28,7 +28,7 @@ sh calamares-helper/clone.sh # For cloning subprojects
 ### SSH
 
 ```bash
-git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-helper.git
+git clone git@gitlab.com:rebornos-labs/deployment/calamares/calamares-helper.git
 
 sh calamares-helper/clone.sh ssh # For cloning subprojects
 ```

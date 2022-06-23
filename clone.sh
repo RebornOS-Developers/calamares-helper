@@ -15,11 +15,11 @@ else
 fi
 
 if [ "$OPTIONAL_MODE" = "https" ]; then
-    git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-configuration.git "$PROJECT_DIRECTORY"/calamares-configuration
-    git clone https://gitlab.com/rebornos-labs/installer-and-iso/calamares/calamares-core.git "$PROJECT_DIRECTORY"/calamares-core
+    git clone https://gitlab.com/rebornos-labs/deployment/calamares/calamares-configuration.git "$PROJECT_DIRECTORY"/calamares-configuration
+    git clone https://gitlab.com/rebornos-labs/deployment/calamares/calamares-core.git "$PROJECT_DIRECTORY"/calamares-core
 elif [ "$OPTIONAL_MODE" = "ssh" ]; then
-    git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-configuration.git "$PROJECT_DIRECTORY"/calamares-configuration
-    git clone git@gitlab.com:rebornos-labs/installer-and-iso/calamares/calamares-core.git "$PROJECT_DIRECTORY"/calamares-core
+    git clone git@gitlab.com:rebornos-labs/deployment/calamares/calamares-configuration.git "$PROJECT_DIRECTORY"/calamares-configuration
+    git clone git@gitlab.com:rebornos-labs/deployment/calamares/calamares-core.git "$PROJECT_DIRECTORY"/calamares-core
 else
     echo "ERROR: Wrong mode. Please specify either \"https\" or \"ssh\""
     exit 1
