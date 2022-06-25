@@ -4,12 +4,12 @@ EXPERIMENTAL: Please contact shivanandvp@rebornos.org
 
 The **Calamares Installer for RebornOS** is shipped as *two separate packages* for convenience in maintenance:
 
-* Core
-* Configuration
+* calamares-core
+* calamares-configuration
 
-This is a central git repository that holds the above two constituent repositories as folders so that they can be cloned together. However, each constituent repository can be edited independently since each folder has its own separate remote repository, its own commits and its own git history.
+This is a central git repository that pulls the above two repositories as folders so that they can be cloned together. However, each of those can be edited independently since each folder has its own separate remote repository, its own commits, and its own git history.
 
-For ease in identification, in each consituent repository, all packaging related code is placed under a directory called `scripts`. This is where you will find scripts for conveniently building and installing packages. Most of these will have argument pass-through so that any additional arguments can be supplied to the inner command that is called. For additional information, view the script in question for inline documentation. Additionally, the core package contains convenience scripts for configuring, building, and running the local source without packaging it. This is mainly intended for quicker testing during development. The scripts take special care to identify their actual path, even resolving any symlinks, so that you don't have to change directories with `cd` in order to execute them. A relative path is sufficient, like `rebornos-calamares-core/scripts/build_package.sh`.
+For ease in identification, in each consituent repository, all packaging related code is placed under a directory called `scripts`. This is where you will find scripts for conveniently building and installing packages. Most of these will have argument pass-through so that any additional arguments like `--noconfirm` can be supplied to the inner command that is called. For additional information, view the script in question for inline documentation. Additionally, the calamares-core package contains convenience scripts for configuring, building, and running the local source without packaging it. This is mainly intended for quicker testing during development. The scripts take special care to identify their actual path, even resolving any symlinks, so that you don't have to change directories with `cd` in order to execute them. A relative path is sufficient, like `calamares-core/scripts/setup.sh`.
 
 Athough the convenience scripts can practically do everything that `makepkg` can do, advanced users can access the `PKGBUILD`under each repository by navigating to`scripts/packaging`. By changing to this directory, you can run `makepkg`on your own for building packages for Arch Linux. The naming of`packaging` implies there is space for expansion into non-Arch bases.
 
@@ -72,10 +72,10 @@ sh test.sh online
 
 ## 4. Updating
 
-The below script will update the local git repository by pulling the superproject and all subprojects from the remote git repository. You would run this to retrieve all the changes made to the project by the developer(s)
+The below script will update the local git repository by pulling the helper, the core, and the configuration from the remote git repository. You would run this to retrieve all the changes made to the project by the developer(s)
 
 ```bash
-sh pull.sh
+sh update.sh
 ```
 
 Once done, you can proceed to [2. Setup](2-setup)
