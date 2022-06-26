@@ -14,6 +14,12 @@ else
     shift 1
 fi
 
+echo ""
+echo "Installing Git LFS"
+echo ""
+sudo pacman -S --needed git-lfs
+git lfs install
+
 if [ "$OPTIONAL_MODE" = "https" ]; then
     git clone https://gitlab.com/rebornos-labs/deployment/calamares/calamares-configuration.git "$PROJECT_DIRECTORY"/calamares-configuration
     git clone https://gitlab.com/rebornos-labs/deployment/calamares/calamares-core.git "$PROJECT_DIRECTORY"/calamares-core

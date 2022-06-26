@@ -40,9 +40,17 @@ then open `calamares-helper/Installer.code-workspace` on Visual Studio Code.
 
 The above file automatically recognizes all the local installer git repositories and displays them within the VSCode workspace.
 
-## 2. Setup
+## 2. Build
 
-The below script will internally call the convenience build and install scripts of each constituent repository. Make sure that you are in the project base directory (you would run something like `cd calamares-helper` after cloning).
+The below script will internally call the convenience build scripts of each constituent repository. Make sure that you are in the project base directory (you would have had to run something like `cd calamares-helper` after cloning).
+
+```bash
+sh build.sh
+```
+
+## (Alternative to build, Optional) Setup
+
+The below script will internally call the convenience build and install scripts of each constituent repository. Make sure that you are in the project base directory (you would have had to run something like `cd calamares-helper` after cloning).
 
 ```bash
 sh setup.sh
