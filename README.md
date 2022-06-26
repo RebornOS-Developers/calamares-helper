@@ -86,4 +86,4 @@ The below script will update the local git repository by pulling the helper, the
 sh update.sh
 ```
 
-Once done, you can proceed to [2. Setup](2-setup)
+Once done, you can proceed to [2. Build](2-build)
