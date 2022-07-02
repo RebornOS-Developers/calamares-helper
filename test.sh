@@ -5,16 +5,14 @@ PROJECT_DIRECTORY="$(dirname -- "$SCRIPT_DIRECTORY")"
 
 INSTALLER_PACKAGE="calamares-core"
 LOG_PATH="/root/.cache/calamares/session.log"
-CALAMARES_EXECUTABLE="run_calamares.sh"
+CALAMARES_EXECUTABLE="run_calamares"
 OPTIONAL_MODE=""
 
 MODE="$(echo "$1" | tr "[:upper:]" "[:lower:]")"
 if [ "$MODE" = "offline" ] || [ "$MODE" = "online" ]; then
-    CALAMARES_EXECUTABLE="run_calamares.sh"
     OPTIONAL_MODE="$MODE"
     shift 1
 else
-    CALAMARES_EXECUTABLE="run_calamares.sh"
     OPTIONAL_MODE="online"
     shift 1
 fi
