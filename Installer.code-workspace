@@ -14,7 +14,7 @@
 		}
 	],
 	"settings": {
-		"git.postCommitCommand": "sync",
+		"git.postCommitCommand": "none",
 		"git.autofetch": "all",
 		"git.autoStash": true,
 		"git.enableCommitSigning": true,
