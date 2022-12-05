@@ -25,11 +25,14 @@
 		"github.gitProtocol": "ssh",
 		"conventionalCommits.silentAutoCommit": true,
 		"conventionalCommits.gitmoji": false,
-		"conventionalCommits.promptScopes": false,
+		"conventionalCommits.promptScopes": true,
 		"conventionalCommits.promptFooter": false,
 		"scm.alwaysShowActions": true,
 		"gitlens.advanced.repositorySearchDepth": 3,
 		"git.repositoryScanMaxDepth": 3,
 		"scm.alwaysShowRepositories": true,
+		"conventionalCommits.scopes": [
+			"PKGBUILDs"
+		],
 	}
 }
