@@ -32,7 +32,8 @@
 		"git.repositoryScanMaxDepth": 3,
 		"scm.alwaysShowRepositories": true,
 		"conventionalCommits.scopes": [
-			"PKGBUILDs"
+			"PKGBUILDs",
+			"CI"
 		],
 	}
 }
