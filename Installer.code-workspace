@@ -33,7 +33,8 @@
 		"scm.alwaysShowRepositories": true,
 		"conventionalCommits.scopes": [
 			"PKGBUILDs",
-			"CI"
+			"CI",
+			"README.md"
 		],
 	}
 }
