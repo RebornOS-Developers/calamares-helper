@@ -34,7 +34,8 @@
 		"conventionalCommits.scopes": [
 			"PKGBUILDs",
 			"CI",
-			"README.md"
+			"README.md",
+			"netinstall"
 		],
 	}
 }
